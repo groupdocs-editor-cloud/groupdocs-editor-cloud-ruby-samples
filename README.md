@@ -26,7 +26,7 @@ The package contains Ruby examples. Follow the given steps to proceed run:
 * Execute "gem install groupdocs_editor_cloud" command
 * Run examples using "ruby RunExamples.rb" command
 
-For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/editorcloud/Getting+Started).
+For more details, visit  [Getting Started](https://docs.groupdocs.cloud/editor/getting-started/).
 
 ## Licensing
 All GroupDocs.Editor Cloud SDKs are licensed under [MIT License](LICENSE).
