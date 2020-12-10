@@ -7,8 +7,8 @@ class EditTextDocument
     
     def self.Run()    
         # Create necessary API instances    
-        fileApi = GroupDocsEditorCloud::FileApi.from_keys($app_sid, $app_key)
-        editApi = GroupDocsEditorCloud::EditApi.from_keys($app_sid, $app_key)
+        fileApi = GroupDocsEditorCloud::FileApi.from_config($config)
+        editApi = GroupDocsEditorCloud::EditApi.from_config($config)
         
         # The document already uploaded into the storage.
         # Load it into editable state

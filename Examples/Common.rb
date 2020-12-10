@@ -1,8 +1,7 @@
 # Load the gem
 require 'groupdocs_editor_cloud'
 
-$app_sid = ""
-$app_key = ""
+$config = ""
 
 class Common
   
@@ -11,8 +10,8 @@ class Common
     @TestFiles=  Dir.glob("Resources/**/*.*")
 
     # Api initialization
-    storageApi = GroupDocsEditorCloud::StorageApi.from_keys($app_sid, $app_key)
-    fileApi = GroupDocsEditorCloud::FileApi.from_keys($app_sid, $app_key)
+    storageApi = GroupDocsEditorCloud::StorageApi.from_config($config)
+    fileApi = GroupDocsEditorCloud::FileApi.from_config($config)
 
     puts("Files Count: "+((@TestFiles).length).to_s)
     @TestFiles.each do |item|

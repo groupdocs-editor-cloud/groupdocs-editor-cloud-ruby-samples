@@ -6,7 +6,7 @@ require './Common.rb'
 class GetSupportedFileTypes
     
     def self.Run()        
-        infoApi = GroupDocsEditorCloud::InfoApi.from_keys($app_sid, $app_key)        
+        infoApi = GroupDocsEditorCloud::InfoApi.from_config($config)        
         result = infoApi.get_supported_file_formats()
         result.formats.each do |format|        
             puts(format.file_format)

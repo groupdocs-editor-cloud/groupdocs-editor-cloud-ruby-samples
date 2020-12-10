@@ -6,7 +6,7 @@ require './Common.rb'
 class GetDocumentInformation
     
     def self.Run()        
-        infoApi = GroupDocsEditorCloud::InfoApi.from_keys($app_sid, $app_key)
+        infoApi = GroupDocsEditorCloud::InfoApi.from_config($config)
         fileInfo = GroupDocsEditorCloud::FileInfo.new
         fileInfo.file_path = 'WordProcessing/password-protected.docx'
         fileInfo.password = 'password'
