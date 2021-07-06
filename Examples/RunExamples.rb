@@ -2,9 +2,9 @@ require './Common.rb'
 
 # Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
 $client_id = "XXXX-XXXX-XXXX-XXXX"
-$client_secret = "XXXXXXXXXXXXXXXX"
+$client_secret = "XXXXXXXXXXXXXXXXX"
 
-$config = GroupDocsConversionCloud::Configuration.new($client_id, $client_secret)
+$config = GroupDocsEditorCloud::Configuration.new($client_id, $client_secret)
 $config.api_base_url = "https://api.groupdocs.cloud"
 
 class RunExamples
